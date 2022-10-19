@@ -9,4 +9,9 @@ class CrudController extends Controller
     public function hello(){
         return 'hello';
     }
+
+    public function show(Request $resquest){
+        $name = $resquest->test;
+        return $name;
+    }
 }
