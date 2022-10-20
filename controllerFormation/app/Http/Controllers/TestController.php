@@ -13,7 +13,7 @@ class TestController extends Controller
      */
     public function index()
     {
-        // return 'hello amine zaml';
+        return 'hello word';
     }
 
     /**
@@ -23,7 +23,7 @@ class TestController extends Controller
      */
     public function create()
     {
-        return 'hello';
+        return 'create item';
     }
 
     /**
@@ -45,7 +45,7 @@ class TestController extends Controller
      */
     public function show($id)
     {
-        return "haaaaay $id ";
+        return "show id: $id ";
     }
 
     /**
@@ -56,7 +56,7 @@ class TestController extends Controller
      */
     public function edit($id)
     {
-        return "haaaaay ad";
+        return "edit by id : $id";
     }
 
     /**
@@ -68,7 +68,7 @@ class TestController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
     }
 
     /**
@@ -79,6 +79,6 @@ class TestController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
     }
 }
