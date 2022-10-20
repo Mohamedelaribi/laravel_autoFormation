@@ -13,7 +13,7 @@ class TestController extends Controller
      */
     public function index()
     {
-        return 'hello';
+        return 'hello amine zaml';
     }
 
     /**
@@ -23,7 +23,7 @@ class TestController extends Controller
      */
     public function create()
     {
-        //
+        return 'hello';
     }
 
     /**
@@ -45,7 +45,7 @@ class TestController extends Controller
      */
     public function show($id)
     {
-        //
+        return "haaaaay $id ";
     }
 
     /**
