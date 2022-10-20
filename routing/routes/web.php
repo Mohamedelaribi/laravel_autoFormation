@@ -17,7 +17,7 @@ use App\Http\Controllers\TestFormation;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return 'hello word';
 });
 
 
