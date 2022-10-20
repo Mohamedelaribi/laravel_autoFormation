@@ -18,7 +18,7 @@ use App\Http\Controllers\TestController;
 */
 
 Route::get('/', function () {
-    return 'hello word';
+    return view('welcome');
 });
 
 
@@ -28,10 +28,6 @@ Route::get('/contact',function(){
 });
 
 
-
-Route::redirect('/home', '/contact',);
-
-
 Route::get('/index/{stor?}/{item?}',function($stor = NULL , $itme = null){
     return $stor.' '. $itme;
 });
@@ -39,4 +35,5 @@ Route::get('/index/{stor?}/{item?}',function($stor = NULL , $itme = null){
 
 
 
+Route::resource('test', TestController::class);
 
