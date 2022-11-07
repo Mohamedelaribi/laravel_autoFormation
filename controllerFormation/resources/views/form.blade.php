@@ -7,7 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="/form" method="get">
+    <a href="{{route('test.store')}}">test</a>
+    <form action="" method="post">
+        @csrf
         <input type="text" name="test">
         <input type="text" name="test2">
         <input type="submit">

@@ -13,7 +13,7 @@ class TestController extends Controller
      */
     public function index()
     {
-        return 'hello word';
+        return 'hello word from index';
     }
 
     /**
@@ -34,7 +34,7 @@ class TestController extends Controller
      */
     public function store(Request $request)
     {
-        return 'this is store';
+        return view('store');
     }
 
     /**
