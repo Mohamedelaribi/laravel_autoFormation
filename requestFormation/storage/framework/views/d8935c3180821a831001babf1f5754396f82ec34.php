@@ -1,0 +1,1 @@
+<?php echo e($name); ?><?php /**PATH C:\xampp\htdocs\laravel_autoFormation\auto_formation\resources\views/index.blade.php ENDPATH**/ ?>
