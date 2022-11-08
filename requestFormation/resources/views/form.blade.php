@@ -7,9 +7,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="{{route ('test.store')}}" method="post">
-        @csrf
-        <input type="text" name="test">
+    <form action="/form" method="post">
+        <input type="text" name="testName">
         <input type="text" name="test2">
         <input type="submit">
     </form>

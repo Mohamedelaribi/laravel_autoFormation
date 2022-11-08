@@ -7,8 +7,12 @@
     <title>Document</title>
 </head>
 <body>
+<<<<<<< Updated upstream
     <a href="{{route('test.store')}}">test</a>
     <form action="" method="post">
+=======
+    <form action="{{route ('test.store')}}" method="post">
+>>>>>>> Stashed changes
         @csrf
         <input type="text" name="test">
         <input type="text" name="test2">

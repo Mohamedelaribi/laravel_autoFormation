@@ -3,7 +3,6 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CrudController;
 use App\Http\Controllers\TestFormation;
-use App\Http\Controllers\eloquent;
 
 
 /*
@@ -30,7 +29,9 @@ Route::get('/contact',function(){
 // Route::get('/index',[CrudController::class,'hello']);
 
 use Illuminate\Http\Request;
-Route::any('/form', function(Request $req){
+Route::any('/form', function(Request $request){
+    $testName = $request->input('testName');
+    return $testName;
 
 });
 
@@ -54,9 +55,4 @@ Route::any('/form', function(Request $req){
 
 
 Route::get('/index', TestFormation::class);
-
-
-
-// Route::get('/hasOne',[eloquent::class,'hasOne']);
-route
 
