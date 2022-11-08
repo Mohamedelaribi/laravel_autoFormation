@@ -10,6 +10,10 @@ class Ayoube extends Model
     use HasFactory;
 
     public function omar(){
+        return $this->hasOne(Omar::class);
+    }
+
+    public function omarMany(){
         return $this->hasMany(Omar::class);
     }
 }
